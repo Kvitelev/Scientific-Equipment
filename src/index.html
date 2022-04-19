@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Scientific Equipment</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__flex">
+        <a class="header__link" href="#" aria-label="Логотип сылка на главную страницу"></a>
+        <button class="header__btn header__btn--open btn-reset" type="button"></button>
+        <nav class="menu menu-none">
+          <ul class="menu__list menu__list--flex list-reset">
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="#">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--open" href="#">Оборудование</a>
+              <ul class="menu__list-secondary menu__list-secondary--none list-reset">
+                <li class="menu__item-secondary">
+                  <a class="menu__link-secondary" href="#">Переносной мотобур для отбора ориентированных образцов ПМБ-2б</a>
+                </li>
+                <li class="menu__item-secondary">
+                  <a class="menu__link-secondary" href="#">Бак переносной с ручным насосом</a>
+                </li>
+                <li class="menu__item-secondary">
+                  <a class="menu__link-secondary" href="#">Безрезьбовая буровая коронка с алмазным наконечником</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--small" href="http://scienteq.pro@gmail.com">scienteq.pro@gmail.com</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__list-language list-reset">
+          <li class="header__item-language">
+            <a class="header__link-language" href="#">Ru</a>
+          </li>
+          <li class="header__item-language header__item-language--none">
+            <a class="header__link-language" href="#">Eng</a>
+          </li>
+          <li class="header__item-language header__item-language--none">
+            <a class="header__link-language" href="#">Chi</a>
+          </li>
+          <button class="header__btn-language header__btn-language--close btn-reset" type="button" aria-label="Развернуть список выбора языка"></button>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <section class="product">
+        <div class="container product__flex">
+          <h1 class="title main__title">Профессиональное геологическое оборудование</h1>
+          <img class="product__img" src="img/product/moto-boor-img1.jpg" alt="Бензиновый переносной мотобур" width="280" height="240">
+          <div class="product__toggle">
+            <button class="product__toggle-btn product__toggle-btn--active btn-reset" aria-label="Переключить слайд"></button>
+            <button class="product__toggle-btn btn-reset" aria-label="Переключить слайд"></button>
+            <button class="product__toggle-btn btn-reset" aria-label="Переключить слайд"></button>
+          </div>
+          <h2 class="title product-title product-title--margin">Переносной мотобур для отбора ориентированных образцов ПМБ-2б</h2>
+          <p class="product__description">
+            Ручной мотобур ПМБ-2б предназначен для отбора геологических, геофизических, геохимических и прочих проб, в&nbsp;частности для отбора ориентированных палеомагнитных кернов стандартного диаметра.
+          </p>
+          <ul class="product__list list-reset">
+            <li class="product__item">Бензиновый двигатель 50&nbsp;см3</li>
+            <li class="product__item">Вес ~5&nbsp;кг</li>
+            <li class="product__item">Габариты 28 &times; 44 &times; 34&nbsp;см.</li>
+            <li class="product__item">Система охлаждения водяная.</li>
+          </ul>
+          <button class="btn btn-fone btn-reset" type="button">Купить</button>
+        </div>
+      </section>
+      <section class="company">
+        <div class="container company__flex company__flex--bg">
+          <h2 class="title company__title">Чем мы занимаемся?</h2>
+          <p class="company__description">
+            Компания Scientific Equipment занимается разработкой, проектированием и&nbsp;созданием механизмов различного назначения.
+            Нашими основными направлениями деятельности являются работы в&nbsp;разработке высокотемпературного и&nbsp;вакуумного оборудования,
+            а&nbsp;также механизированные системы с&nbsp;высокими требованиями к&nbsp;точности изготовления.
+          </p>
+          <a class="btn btn-fone btn-reset" href="#">Узнать подробнее</a>
+        </div>
+      </section>
+      <section class="secondary-product">
+        <div class="container">
+          <h2 class="title secondary-product__title">С этим товаром покупают:</h2>
+          <div class="secondary-product__flex">
+            <h3 class="title product-title secondary-product__product-title">Бак переносной с ручным насосом</h3>
+            <img class="secondary-product__img" src="img/product/bak-10l-img1.jpg" alt="10-литровый бак для воды оранжевого цвета" width="240" height="240">
+            <p class="secondary-product__description">
+              10-литровый бак для воды с&nbsp;ручным насосом.
+            </p>
+            <button class="btn btn-transparent btn-reset secondary-product__btn" type="button">Купить</button>
+          </div>
+          <div class="secondary-product__flex">
+            <h3 class="title product-title secondary-product__product-title">Безрезьбовая буровая коронка с алмазным наконечником</h3>
+            <img class="secondary-product__img secondary-product__img--two" src="img/product/koronka-img1.jpg" alt="Буровая коронка" width="240" height="240">
+            <p class="secondary-product__description">
+              Буровая коронка из&nbsp;высокопрочной, немагнитной нержавеющей стали
+            </p>
+            <button class="btn btn-transparent btn-reset secondary-product__btn" type="button">Купить</button>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="container questions__flex">
+          <h2 class="title questions__title">Остались вопросы?</h2>
+          <p class="questions__description">
+            Закажите обратный звонок, с&nbsp;вами свяжется менеджер и&nbsp;всё объяснит
+          </p>
+          <button class="btn btn-fone btn-reset" type="button">Заказать звонок</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <a class="footer__link-logo" href="#" aria-label="Логотип сылка на главную страницу"></a>
+        <ul class="footer__list list-reset">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Оборудование</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">О нас</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Политика конфиденциальности</a>
+          </li>
+        </ul>
+        <ul class="footer__list list-reset">
+          <li class="footer__item footer__item-secondary">
+            <a class="footer__link footer__link-secondary footer__link-secondary--active" href="#">Контакты</a>
+          </li>
+          <li class="footer__item footer__item-secondary">
+            <a class="footer__link footer__link-secondary" href="#">scienteq.pro@gmail.com</a>
+          </li>
+          <li class="footer__item footer__item-secondary">
+            <a class="footer__link footer__link-secondary" href="#">Youtube</a>
+          </li>
+        </ul>
+        <p class="footer__copyright">
+          &copy;2022Geologic
+        </p>
+      </div>
+    </footer>
+    <div class="popup">
+      <div class="container">
+        <form class="popup__form" action="#" method="post">
+          <div class="popup__wrapper">
+            <label class="popup__label popup__label--required" for="name">Ваше имя</label>
+            <input class="popup__input" id="name" type="text" placeholder="Как к вам обращаться?">
+          </div>
+          <div class="popup__wrapper">
+            <label class="popup__label popup__label--required" for="tel">Номер телефона</label>
+            <input class="popup__input" id="tel" type="tel" placeholder="Введите ваш номер телефона">
+          </div>
+          <div class="popup__wrapper">
+            <label class="popup__label" for="coment">Комментарий</label>
+            <textarea class="popup__textarea" name="coment" id="coment" placeholder="Когда с вами удобнее связаться?"></textarea>
+          </div>
+          <div class="popup__wrapper">
+            <input class="popup__checkbos visually-hidden" id="checkbox" type="checkbox">
+            <label class="popup__label-checkbox" for="checkbox">Даю своё согласие на обработку <br> <span class="popup__label-checkbox--important">персональных данных</span></label>
+          </div>
+          <button class="btn btn-fone btn-reset" type="button" disabled>Оставить заявку</button>
+          <button class="popup__btn-close btn-reset" type="button" aria-label="Закрыть"></button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="js/language-script.js"></script>
+  <script src="js/menu-script.js"></script>
+</html>

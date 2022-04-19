@@ -1,0 +1,23 @@
+.company {
+  margin-bottom: 40px;
+}
+
+.company__flex {
+  @include flex-h-center;
+  flex-direction: column;
+  &--bg {
+    background-repeat: no-repeat;
+    background-image: url(../img/bg/company-bg.svg);
+    background-position: center 60px;
+  }
+}
+
+.company__title {
+  margin: 0px 0px 50px 0px;
+}
+
+.company__description {
+  width: 350px;
+  padding-top: 185px;
+  margin: 0px 0px 28px 0px;
+}

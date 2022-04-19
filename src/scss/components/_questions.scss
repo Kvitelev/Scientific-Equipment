@@ -1,0 +1,26 @@
+.questions {
+  margin-bottom: 77px;
+}
+
+.questions__flex {
+  @include flex-h-center;
+  flex-direction: column;
+  box-shadow: 0px 4px 63px rgba(165, 165, 165, 0.25);
+  border-radius: 10px;
+  padding: 32px 0px 32px 0px;
+}
+
+.questions__title,
+.questions__description {
+  padding-left: 30px;
+}
+
+.questions__title {
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0px 0px 17px 0px;
+}
+
+.questions__description {
+  margin: 0px 0px 17px 0px;
+}

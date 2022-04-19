@@ -1,0 +1,90 @@
+.popup__form {
+  @include flex-all-center;
+  flex-direction: column;
+  position: relative;
+  background-image: url(../img/logo/ScientificEquipment.svg);
+  background-repeat: no-repeat;
+  background-size: 206px 24px;
+  background-position: center 80px;
+  box-shadow: 4px 4px 10px rgba(6, 43, 23, 0.15);
+  border-radius: 10px 10px 0px 0px;
+  padding: 150px 0px 32px 0px;
+}
+
+.popup__wrapper {
+  @include flex-h-center;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 26px;
+  }
+}
+
+.popup__label {
+  font-size: 16px;
+  line-height: 19px;
+  &--required::after {
+    content: "*";
+    color: $red;
+  }
+}
+
+.popup__input,
+.popup__textarea {
+  width: 300px;
+  padding: 10px;
+  box-shadow: 0px 4px 18px rgba(79, 86, 101, 0.1);
+  border: none;
+  border-radius: 10px;
+}
+
+.popup__textarea {
+  min-height: 130px;
+}
+
+.popup__checkbos + label::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid $gray-checkbos;
+  border-radius: 4px;
+}
+
+.popup__checkbos:checked + label::before {
+  border-color: $green-dark;
+}
+
+.popup__checkbos:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -15px;
+  width: 12px;
+  height: 12px;
+  background-color: $green-dark;
+  border-radius: 2px;
+}
+
+.popup__label-checkbox {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  padding-left: 12px;
+  &--important {
+    color: $green-dark;
+  }
+}
+
+.popup__btn-close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-image: url(../img/icons/close-btn.svg);
+}

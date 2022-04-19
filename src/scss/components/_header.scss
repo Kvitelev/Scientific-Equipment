@@ -1,0 +1,66 @@
+.header {
+  padding-top: 42px;
+}
+
+.header__flex {
+  @include flex-all-sb;
+  flex-wrap: wrap;
+}
+
+.header__link {
+  display: inline-block;
+  background-image: url(../img/logo/ScientificEquipment.svg);
+  background-repeat: no-repeat;
+  background-size: 206px 24px;
+  background-position: left;
+  width: 206px;
+  height: 24px
+}
+
+.header__btn {
+  order: 1;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  &--open {
+    background-image: url(../img/icons/burger.svg);
+  }
+  &--close {
+    background-image: url(../img/icons/close-btn.svg);
+  }
+}
+
+.header__list-language {
+  position: relative;
+  width: 56px;
+  border-radius: 4px;
+  background-color: $green-dark;
+  box-shadow: 0px 4px 20px rgba(13, 77, 42, 0.33);
+}
+
+.header__item-language {
+
+  &--none {
+    display: none;
+  }
+}
+
+.header__link-language {
+  font-size: 16px;
+  line-height: 19px;
+  padding: 6px;
+  color: $white;
+}
+
+.header__btn-language {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 12px;
+  height: 7px;
+  background-image: url(../img/icons/lan-icon-open.svg);
+  transform: rotate(360deg);
+  &--close {
+    transform: rotate(180deg);
+  }
+}

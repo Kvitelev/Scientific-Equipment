@@ -1,0 +1,36 @@
+.secondary-product {
+  margin-bottom: 45px;
+}
+
+.secondary-product__flex {
+  @include flex-h-center;
+  flex-direction: column;
+  padding-top: 5px;
+  &:nth-child(2) {
+    border-bottom: 2px solid $white-200;
+  }
+}
+
+.secondary-product__img {
+  align-self: center;
+  order: -1;
+  width: 240px;
+  height: 240px;
+  margin: 0px 0px 50px 0px;
+  object-fit: contain;
+  &--two {
+    height: 220px;
+  }
+}
+
+.secondary-product__product-title {
+  margin: 0px 0px 15px 0px;
+}
+
+.secondary-product__description {
+  margin: 0px 0px 45px 0px;
+}
+
+.secondary-product__btn {
+  margin-bottom: 35px;
+}

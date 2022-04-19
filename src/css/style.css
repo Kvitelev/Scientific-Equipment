@@ -1,0 +1,554 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/../fonts/Rubik-Regular.woff2") format("woff1");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/../fonts/Rubik-Regular.woff") format("woff2"), url("../fonts/../fonts/Rubik-Regular.woff") format("woff1");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/../fonts/Rubik-Medium.woff2") format("woff1");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/../fonts/Rubik-Medium.woff") format("woff2"), url("../fonts/../fonts/Rubik-Medium.woff") format("woff1");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/../fonts/Rubik-SemiBold.woff2") format("woff2"), url("../fonts/../fonts/Rubik-SemiBold.woff2") format("woff1");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/../fonts/Rubik-SemiBold.woff") format("woff2"), url("../fonts/../fonts/Rubik-SemiBold.woff") format("woff1");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/../fonts/Rubik-Bold.woff2") format("woff2"), url("../fonts/../fonts/Rubik-Bold.woff2") format("woff1");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/../fonts/Rubik-Bold.woff") format("woff2"), url("../fonts/../fonts/Rubik-Bold.woff") format("woff1");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4f5665;
+  background-color: #fff; }
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  max-width: 390px;
+  margin: auto;
+  padding: 0px 20px; }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1240px;
+      margin: auto;
+      padding: 0px 20px; } }
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer; }
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.centered {
+  width: 100%;
+  text-align: center; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0); }
+
+.title {
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 500;
+  color: #0b132a; }
+
+.main__title {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+  margin: 26px 0px 12px 0px; }
+
+.btn {
+  width: 300px;
+  padding: 15px 0;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  border-radius: 10px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      align-self: center; }
+  .btn-fone {
+    color: #fff;
+    background-color: #147e45;
+    -webkit-box-shadow: 0px 4px 20px rgba(13, 77, 42, 0.33);
+            box-shadow: 0px 4px 20px rgba(13, 77, 42, 0.33); }
+  .btn-transparent {
+    color: #147e45;
+    background-color: transparent;
+    border: 2px solid #147e45; }
+  .btn:hover {
+    background-color: #147e45;
+    color: #fff; }
+  .btn:active {
+    background-color: #1fb765;
+    color: #fff; }
+  .btn:disabled {
+    background-color: #99a09c;
+    color: #fff; }
+
+.header {
+  padding-top: 42px; }
+
+.header__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.header__link {
+  display: inline-block;
+  background-image: url(../img/logo/ScientificEquipment.svg);
+  background-repeat: no-repeat;
+  background-size: 206px 24px;
+  background-position: left;
+  width: 206px;
+  height: 24px; }
+
+.header__btn {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat; }
+  .header__btn--open {
+    background-image: url(../img/icons/burger.svg); }
+  .header__btn--close {
+    background-image: url(../img/icons/close-btn.svg); }
+
+.header__list-language {
+  position: relative;
+  width: 56px;
+  border-radius: 4px;
+  background-color: #147e45;
+  -webkit-box-shadow: 0px 4px 20px rgba(13, 77, 42, 0.33);
+          box-shadow: 0px 4px 20px rgba(13, 77, 42, 0.33); }
+
+.header__item-language--none {
+  display: none; }
+
+.header__link-language {
+  font-size: 16px;
+  line-height: 19px;
+  padding: 6px;
+  color: #fff; }
+
+.header__btn-language {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 12px;
+  height: 7px;
+  background-image: url(../img/icons/lan-icon-open.svg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg); }
+  .header__btn-language--close {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+.product {
+  margin-bottom: 55px; }
+
+.product__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.product__img {
+  width: 280px;
+  height: 240px;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.product-title {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600; }
+  .product-title--margin {
+    margin: 25px 0px 12px 0px; }
+
+.product__description {
+  margin: 0px 0px 28px 0px;
+  width: 350px; }
+
+.product__list {
+  position: relative;
+  margin-bottom: 12px; }
+
+.product__item {
+  line-height: 17px;
+  color: black;
+  padding-left: 27px;
+  margin-bottom: 20px; }
+  .product__item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icons/item-product.svg); }
+
+.product__toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 18px;
+          column-gap: 18px; }
+  .product__toggle-btn {
+    width: 12px;
+    height: 12px;
+    background-color: #eeeff2;
+    border-radius: 50%; }
+  .product__toggle-btn--active {
+    background-color: #147e45; }
+
+.company {
+  margin-bottom: 40px; }
+
+.company__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .company__flex--bg {
+    background-repeat: no-repeat;
+    background-image: url(../img/bg/company-bg.svg);
+    background-position: center 60px; }
+
+.company__title {
+  margin: 0px 0px 50px 0px; }
+
+.company__description {
+  width: 350px;
+  padding-top: 185px;
+  margin: 0px 0px 28px 0px; }
+
+.secondary-product {
+  margin-bottom: 45px; }
+
+.secondary-product__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 5px; }
+  .secondary-product__flex:nth-child(2) {
+    border-bottom: 2px solid #eeeff2; }
+
+.secondary-product__img {
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  width: 240px;
+  height: 240px;
+  margin: 0px 0px 50px 0px;
+  -o-object-fit: contain;
+     object-fit: contain; }
+  .secondary-product__img--two {
+    height: 220px; }
+
+.secondary-product__product-title {
+  margin: 0px 0px 15px 0px; }
+
+.secondary-product__description {
+  margin: 0px 0px 45px 0px; }
+
+.secondary-product__btn {
+  margin-bottom: 35px; }
+
+.questions {
+  margin-bottom: 77px; }
+
+.questions__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 4px 63px rgba(165, 165, 165, 0.25);
+          box-shadow: 0px 4px 63px rgba(165, 165, 165, 0.25);
+  border-radius: 10px;
+  padding: 32px 0px 32px 0px; }
+
+.questions__title,
+.questions__description {
+  padding-left: 30px; }
+
+.questions__title {
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0px 0px 17px 0px; }
+
+.questions__description {
+  margin: 0px 0px 17px 0px; }
+
+.footer__link-logo {
+  display: inline-block;
+  width: 247px;
+  height: 28px;
+  background-image: url(../img/logo/ScientificEquipment.svg);
+  background-repeat: no-repeat;
+  background-size: 247px 28px; }
+
+.footer__list:nth-child(2) {
+  padding-top: 20px;
+  margin-bottom: 25px; }
+
+.footer__list:nth-child(3) {
+  margin-bottom: 70px; }
+
+.footer__item {
+  margin-bottom: 12px; }
+  .footer__item-secondary {
+    margin-bottom: 23px; }
+
+.footer__link {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #0b132a; }
+
+.footer__link-secondary {
+  font-size: 16px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #4f5665; }
+  .footer__link-secondary--active {
+    color: #147e45; }
+
+.footer__copyright {
+  font-size: 16px;
+  line-height: 30px;
+  color: #afb5c0; }
+
+.menu {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-top: 48px; }
+  .menu-none {
+    display: none; }
+
+.menu__item {
+  margin-bottom: 30px; }
+  .menu__item-secondary {
+    margin-top: 28px;
+    padding-left: 30px; }
+
+.menu__link {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+  color: inherit; }
+  .menu__link--active {
+    color: #147e45; }
+  .menu__link--small, .menu__link-secondary {
+    color: inherit;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400; }
+
+.menu__list-secondary--none {
+  display: none; }
+
+.popup__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-image: url(../img/logo/ScientificEquipment.svg);
+  background-repeat: no-repeat;
+  background-size: 206px 24px;
+  background-position: center 80px;
+  -webkit-box-shadow: 4px 4px 10px rgba(6, 43, 23, 0.15);
+          box-shadow: 4px 4px 10px rgba(6, 43, 23, 0.15);
+  border-radius: 10px 10px 0px 0px;
+  padding: 150px 0px 32px 0px; }
+
+.popup__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-bottom: 20px; }
+  .popup__wrapper:last-child {
+    margin-bottom: 26px; }
+
+.popup__label {
+  font-size: 16px;
+  line-height: 19px; }
+  .popup__label--required::after {
+    content: "*";
+    color: #ff0000; }
+
+.popup__input,
+.popup__textarea {
+  width: 300px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 4px 18px rgba(79, 86, 101, 0.1);
+          box-shadow: 0px 4px 18px rgba(79, 86, 101, 0.1);
+  border: none;
+  border-radius: 10px; }
+
+.popup__textarea {
+  min-height: 130px; }
+
+.popup__checkbos + label::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b9bbc1;
+  border-radius: 4px; }
+
+.popup__checkbos:checked + label::before {
+  border-color: #147e45; }
+
+.popup__checkbos:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -15px;
+  width: 12px;
+  height: 12px;
+  background-color: #147e45;
+  border-radius: 2px; }
+
+.popup__label-checkbox {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  padding-left: 12px; }
+  .popup__label-checkbox--important {
+    color: #147e45; }
+
+.popup__btn-close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-image: url(../img/icons/close-btn.svg); }
+
+/*# sourceMappingURL=style.css.map */
