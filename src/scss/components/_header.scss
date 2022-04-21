@@ -14,7 +14,12 @@
   background-size: 206px 24px;
   background-position: left;
   width: 206px;
-  height: 24px
+  height: 24px;
+  @include desktop {
+    background-size: 247px 28px;
+    width: 247px;
+    height: 28px;
+  }
 }
 
 .header__btn {
@@ -28,6 +33,9 @@
   &--close {
     background-image: url(../img/icons/close-btn.svg);
   }
+  @include desktop {
+    display: none;
+  }
 }
 
 .header__list-language {
@@ -39,7 +47,6 @@
 }
 
 .header__item-language {
-
   &--none {
     display: none;
   }
@@ -62,5 +69,8 @@
   transform: rotate(360deg);
   &--close {
     transform: rotate(180deg);
+  }
+  @include desktop {
+    top: 10px;
   }
 }

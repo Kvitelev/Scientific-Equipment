@@ -4,6 +4,30 @@
   &-none{
     display: none;
   }
+  @include desktop {
+    order: 0;
+    display: inline-block;
+    margin-left: 400px;
+  }
+}
+
+.menu__list {
+  @include desktop {
+    @include flex-all-center;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: relative;
+  }
+  &-secondary {
+    @include desktop {
+      position: absolute;
+      z-index: 3;
+      background: $white;
+      box-shadow: 0px 6px 10px rgba(6, 43, 23, 0.1);
+      border-radius: 4px;
+      padding: 15px;
+    }
+  }
 }
 
 .menu__item {
@@ -11,6 +35,14 @@
   &-secondary {
     margin-top: 28px;
     padding-left: 30px;
+    @include desktop {
+      width: 300px;
+      margin-top: 15px;
+      padding-left: 0;
+    }
+  }
+  @include desktop {
+    margin-bottom: 40px;
   }
 }
 
@@ -29,6 +61,11 @@
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: inherit;
   }
 }
 

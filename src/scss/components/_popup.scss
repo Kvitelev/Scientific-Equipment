@@ -1,4 +1,22 @@
-.popup__form {
+.popup,
+.popup-success {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: $white;
+  box-shadow: 4px 4px 10px rgba(6, 43, 23, 0.15);
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  &-none {
+    display: none;
+  }
+  @include desktop {
+    width: auto;
+  }
+}
+
+.popup__form,
+.popup-success__wrapper {
   @include flex-all-center;
   flex-direction: column;
   position: relative;
@@ -6,8 +24,6 @@
   background-repeat: no-repeat;
   background-size: 206px 24px;
   background-position: center 80px;
-  box-shadow: 4px 4px 10px rgba(6, 43, 23, 0.15);
-  border-radius: 10px 10px 0px 0px;
   padding: 150px 0px 32px 0px;
 }
 
@@ -87,4 +103,22 @@
   height: 16px;
   background-repeat: no-repeat;
   background-image: url(../img/icons/close-btn.svg);
+}
+
+.popup-success {
+  display: none;
+}
+
+.popup-success__description {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  color: $black;
+  margin-top: 70px;
+  &--small {
+    font-weight: 400;
+    color: inherit;
+    width: 290px;
+    margin: 0px 0px 150px 0px;
+  }
 }

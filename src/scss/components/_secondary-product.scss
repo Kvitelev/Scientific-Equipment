@@ -1,5 +1,21 @@
 .secondary-product {
   margin-bottom: 45px;
+  @include desktop {
+    margin-bottom: 120px;
+  }
+}
+
+.secondary-product__flex-desctop {
+  @include desktop {
+    @include flex-all-sb;
+    flex-wrap: wrap;
+  }
+}
+
+.secondary-product__title {
+  @include desktop {
+    line-height: 41px;
+  }
 }
 
 .secondary-product__flex {
@@ -8,6 +24,9 @@
   padding-top: 5px;
   &:nth-child(2) {
     border-bottom: 2px solid $white-200;
+    @include desktop {
+      border-bottom: none;
+    }
   }
 }
 
@@ -25,10 +44,22 @@
 
 .secondary-product__product-title {
   margin: 0px 0px 15px 0px;
+  @include desktop {
+    font-size: 19px;
+    line-height: 22px;
+    margin: 0px 0px 12px 0px;
+    width: 200px;
+    &--width {
+      width: 300px;
+    }
+  }
 }
 
 .secondary-product__description {
   margin: 0px 0px 45px 0px;
+  @include desktop {
+    width: 250px;
+  }
 }
 
 .secondary-product__btn {
