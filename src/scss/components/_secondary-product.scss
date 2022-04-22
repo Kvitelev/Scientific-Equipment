@@ -15,6 +15,7 @@
 .secondary-product__title {
   @include desktop {
     line-height: 41px;
+    margin-bottom: 120px;
   }
 }
 
@@ -22,17 +23,20 @@
   @include flex-h-center;
   flex-direction: column;
   padding-top: 5px;
-  &:nth-child(2) {
+  &:not(:last-child) {
     border-bottom: 2px solid $white-200;
     @include desktop {
       border-bottom: none;
     }
   }
+  @include desktop {
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
 }
 
 .secondary-product__img {
   align-self: center;
-  order: -1;
   width: 240px;
   height: 240px;
   margin: 0px 0px 50px 0px;
@@ -40,6 +44,12 @@
   &--two {
     height: 220px;
   }
+}
+
+.secondary-product__wrapper {
+  @include flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .secondary-product__product-title {
@@ -59,6 +69,9 @@
   margin: 0px 0px 45px 0px;
   @include desktop {
     width: 250px;
+    &--drill {
+      width: 300px;
+    }
   }
 }
 

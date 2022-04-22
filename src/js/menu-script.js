@@ -14,6 +14,11 @@ menuBtn.addEventListener('click', function() {
     menu.classList.add('menu-none');
   }
 })
-linkBtn.addEventListener('click', function () {
-  listOpen.classList.toggle('menu__list-secondary--none');
+linkBtn.addEventListener('mouseover', function () {
+  if (listOpen.classList.contains("menu__list-secondary--none")) {
+    listOpen.classList.remove('menu__list-secondary--none');
+  }
+  else {
+    listOpen.classList.add('menu__list-secondary--none');
+  }
 })

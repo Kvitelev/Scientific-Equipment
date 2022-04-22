@@ -11,18 +11,18 @@
   <body>
     <header class="header">
       <div class="container header__flex">
-        <a class="header__link" aria-label="Логотип сылка на главную страницу"></a>
+        <a class="header__link" href="index.html" aria-label="Логотип сылка на главную страницу"></a>
         <button class="header__btn header__btn--open btn-reset" type="button"></button>
         <nav class="menu menu-none">
           <ul class="menu__list menu__list--flex list-reset">
             <li class="menu__item">
-              <a class="menu__link menu__link--active">Главная</a>
+              <a class="menu__link" href="index.html">Главная</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link menu__link--open" href="catalog.html">Оборудование</a>
+              <a class="menu__link menu__link--active menu__link--open" href="catalog.html">Оборудование</a>
               <ul class="menu__list-secondary menu__list-secondary--none list-reset">
                 <li class="menu__item-secondary">
-                  <a class="menu__link-secondary" href="page-drill.html">Переносной мотобур для отбора ориентированных образцов ПМБ-2б</a>
+                  <a class="menu__link-secondary">Переносной мотобур для отбора ориентированных образцов ПМБ-2б</a>
                 </li>
                 <li class="menu__item-secondary">
                   <a class="menu__link-secondary" href="page-pump.html">Бак переносной с ручным насосом</a>
@@ -56,8 +56,7 @@
     </header>
     <main class="main">
       <section class="product">
-        <div class="container product__flex">
-          <h1 class="title main__title">Профессиональное <br> геологическое оборудование</h1>
+        <div class="container product__flex product__flex--page-drill">
           <div class="product__slider">
             <button class="product__slider-btn product__slider-btn--left btn-reset" aria-label="Переключить слайд">
               <svg class="product__slider-btn-icon" width="20" height="18" viewBox="0 0 20 18" fill="#DDE0E4" xmlns="http://www.w3.org/2000/svg">
@@ -79,9 +78,16 @@
             </div>
           </div>
           <div class="product__content">
-            <h2 class="title product-title product-title--margin">Переносной мотобур для отбора ориентированных образцов ПМБ-2б</h2>
+            <h1 class="title product-title product-title--margin">Переносной мотобур для отбора ориентированных образцов ПМБ-2б</h2>
+            <p class="product__country">(производство Россия)</p>
             <p class="product__description">
-              Ручной мотобур ПМБ-2б предназначен для отбора геологических, геофизических, геохимических и прочих проб, в&nbsp;частности для отбора ориентированных палеомагнитных кернов стандартного диаметра.
+              Ручной мотобур ПМБ-2б предназначен для отбора геологических, геофизических, геохимических и прочих проб, в частности для отбора ориентированных палеомагнитных кернов стандартного диаметра.
+            </p>
+            <p class="product__description">
+              Для обеспечения максимальной надёжности в конструкции мотобура ПМБ-2б используется прямая передача крутящего момента на буровую коронку, а его автономность обеспечена двухтактным бензиновым двигателем 50 куб с всенаправленной подачей топлива для бурения под любым углом.
+            </p>
+            <p class="product__description">
+              В устройстве мотобура ПМБ-2б предусмотрен простой и надёжный тип крепления буровой коронки с открытым хвостовиком позволяющий менять бур без использования дополнительных инструментов.
             </p>
             <ul class="product__list list-reset">
               <li class="product__item">Бензиновый двигатель 50&nbsp;см3</li>
@@ -91,17 +97,6 @@
             </ul>
             <button class="btn btn__fone btn-reset btn-popup" type="button">Купить</button>
           </div>
-        </div>
-      </section>
-      <section class="company">
-        <div class="container company__flex company__flex--bg">
-          <h2 class="title company__title">Чем мы занимаемся?</h2>
-          <p class="company__description">
-            Компания <span class="company__description-bold">Scientific Equipment</span> занимается разработкой, проектированием и&nbsp;созданием механизмов различного назначения.
-            Нашими основными направлениями деятельности являются работы в&nbsp;разработке высокотемпературного и вакуумного оборудования,
-            а&nbsp;также механизированные системы с высокими требованиями к&nbsp;точности изготовления.
-          </p>
-          <a class="btn btn__fone btn__fone-company btn-reset" href="#">Узнать подробнее</a>
         </div>
       </section>
       <section class="secondary-product">
@@ -145,7 +140,7 @@
     </main>
     <footer class="footer">
       <div class="container footer__flex">
-        <a class="footer__link-logo" href="#" aria-label="Логотип сылка на главную страницу"></a>
+        <a class="footer__link-logo" href="index.html" aria-label="Логотип сылка на главную страницу"></a>
         <div class="footer__flex-list">
           <ul class="footer__list list-reset">
             <li class="footer__item">

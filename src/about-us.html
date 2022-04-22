@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Scientific Equipment</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__flex">
+        <a class="header__link" href="index.html" aria-label="Логотип сылка на главную страницу"></a>
+        <button class="header__btn header__btn--open btn-reset" type="button"></button>
+        <nav class="menu menu-none">
+          <ul class="menu__list menu__list--flex list-reset">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--open" href="catalog.html">Оборудование</a>
+              <ul class="menu__list-secondary menu__list-secondary--none list-reset">
+                <li class="menu__item-secondary">
+                  <a class="menu__link-secondary" href="page-drill.html">Переносной мотобур для отбора ориентированных образцов ПМБ-2б</a>
+                </li>
+                <li class="menu__item-secondary">
+                  <a class="menu__link-secondary" href="page-pump.html">Бак переносной с ручным насосом</a>
+                </li>
+                <li class="menu__item-secondary">
+                  <a class="menu__link-secondary" href="page-bit.html">Безрезьбовая буровая коронка с алмазным наконечником</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link  menu__link--active">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--small" href="http://scienteq.pro@gmail.com">scienteq.pro@gmail.com</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__list-language list-reset">
+          <li class="header__item-language">
+            <a class="header__link-language" href="#">Ru</a>
+          </li>
+          <li class="header__item-language header__item-language--none">
+            <a class="header__link-language" href="#">Eng</a>
+          </li>
+          <li class="header__item-language header__item-language--none">
+            <a class="header__link-language" href="#">Chi</a>
+          </li>
+          <button class="header__btn-language header__btn-language--close btn-reset" type="button" aria-label="Развернуть список выбора языка"></button>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">Компания Scientific Equipment</h1>
+      <section class="about-us about-us__flex">
+        <div class="container">
+          <div class="about-us__wrapper">
+            <img class="about-us__img" src="img/about-us/about-us-img.jpg" alt="Компания Scientific Equipment" width="350" height="240">
+            <div class="about-us__contant">
+              <h2 class="title about-us__title">О нас</h2>
+              <p class="about-us__description">
+                Scientific Equipment&nbsp;&mdash; небольшая научно-производственная компания, специализирующаяся на&nbsp;разработке, производстве и&nbsp;внедрении высокоточного оборудования и&nbsp;сопутствующих изделий.
+                Наши разработки используются в&nbsp;ведущих институтах страны. <br>
+                Основу команды составляют специалисты и&nbsp;разработчики, имеющие опыт научной, инженерной и&nbsp;инновационной деятельности.
+              </p>
+            </div>
+          </div>
+          <div class="about-us__wrapper">
+            <img class="about-us__img about-us__img--order" src="img/about-us/about-us-img2.jpg" alt="Компания Scientific Equipment" width="350" height="240">
+            <div class="about-us__contant">
+              <h2 class="title about-us__title">Контакты</h2>
+              <p class="about-us__description">
+                <span class="about-us__text">E-mail</span>
+                <a class="about-us__link" href="http://scienteq.pro@gmail.com">scienteq.pro@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="container questions__flex">
+          <div class="questions__wrapper">
+            <h2 class="title questions__title">Остались вопросы?</h2>
+            <p class="questions__description">
+              Закажите обратный звонок, с&nbsp;вами свяжется менеджер и&nbsp;всё объяснит
+            </p>
+          </div>
+          <button class="btn btn__fone questions-btn btn-reset" type="button">Заказать звонок</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__flex">
+        <a class="footer__link-logo" href="index.html" aria-label="Логотип сылка на главную страницу"></a>
+        <div class="footer__flex-list">
+          <ul class="footer__list list-reset">
+            <li class="footer__item">
+              <a class="footer__link" href="catalog.html">Оборудование</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="about-us.html">О нас</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Политика конфиденциальности</a>
+            </li>
+          </ul>
+          <ul class="footer__list list-reset">
+            <li class="footer__item footer__item-secondary">
+              <a class="footer__link footer__link-secondary footer__link-secondary--active" href="#">Контакты</a>
+            </li>
+            <li class="footer__item footer__item-secondary">
+              <a class="footer__link footer__link-secondary" href="#">scienteq.pro@gmail.com</a>
+            </li>
+            <li class="footer__item footer__item-secondary">
+              <a class="footer__link footer__link-secondary" href="#">Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copyright">
+          &copy;2022Geologic
+        </p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/language-script.js"></script>
+    <script type="text/javascript" src="js/menu-script.js"></script>
+  </body>
+</html>

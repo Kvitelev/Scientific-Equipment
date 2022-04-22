@@ -3,7 +3,7 @@ const popupBtn = document.querySelectorAll('.btn-popup');
 const popupBtnClose = popup.querySelector('.popup__btn-close');
 for (let i = 0; i < popupBtn.length; i++) {
   popupBtn[i].addEventListener('click', function() {
-    popup.classList.remove('popup-none')
+    popup.classList.remove('popup-none');
   })
 }
 popupBtnClose.addEventListener('click', function() {
